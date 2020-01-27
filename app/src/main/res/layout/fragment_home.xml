@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="com.prangroup.kazi.tastytreat.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/locll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvloc"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Location"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvloc"/>
+
+        <ImageView
+            android:id="@+id/ivdropdown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/blackdownarrow"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/tvname"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imagesliderlayout"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:visibility="visible"
+            app:auto_cycle="true"
+            app:corner_radius="20"
+            app:delay="0"
+            app:period="1000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/itemlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5e5e5"
+            android:horizontalSpacing="3dp"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

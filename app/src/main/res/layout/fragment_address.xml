@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="com.prangroup.kazi.tastytreat.fragments.AddressFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvloc"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Location"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvloc"/>
+
+        <ImageView
+            android:id="@+id/ivdropdown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/blackdownarrow"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/tvname"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

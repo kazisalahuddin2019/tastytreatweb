@@ -1,0 +1,397 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.prangroup.kazi.tastytreat.fragments.OrderProcessingFragment">
+
+    <LinearLayout
+        android:id="@+id/deliveryprocess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Delivery Process"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:id="@+id/rgdp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Takeaway"
+                android:id="@+id/rbtw"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Delivery(Charge apply)"
+                android:id="@+id/rbhd"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btndeliverysubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paymentprocess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Payment Method"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:id="@+id/rgpmnt">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:id="@+id/rbcash"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bkash"
+                android:id="@+id/rbbkash"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rocket"
+                android:id="@+id/rbrocket"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit card"
+                android:id="@+id/rbcredit"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debit card"
+                android:id="@+id/rbdebitcard"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimaryDark"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnpmntsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressprocess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Delivery Address"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:id="@+id/rgad"
+            android:orientation="vertical">
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etadr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="Address"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:visibility="visible"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnaddrsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Order details"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="product price"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Delivery charge"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvtc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Total price"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Payment method"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Delivery address"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Confirm"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orderInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Product Collection Information"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="order ID"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Showroom name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Address"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Mobile no"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvthnx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Thanks for stay with Tasty Treat"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HomeOrderInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Home Delivery Information"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/tvthnxmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="We deliver product to your address very soon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvthnxmsg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Thanks for stay with Tasty Treat"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

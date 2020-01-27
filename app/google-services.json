@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "777676078094",
+    "firebase_url": "https://tastytreat-fa35c.firebaseio.com",
+    "project_id": "tastytreat-fa35c",
+    "storage_bucket": "tastytreat-fa35c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777676078094:android:09a741db60d55b52b7d05f",
+        "android_client_info": {
+          "package_name": "com.prangroup.kazi.tastytreat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777676078094-vviemsdi6thh38p86o8pvknnf69n55n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmzqjFxL3PdBmJTo5arGJs4abXxT3nqrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777676078094-vviemsdi6thh38p86o8pvknnf69n55n7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
